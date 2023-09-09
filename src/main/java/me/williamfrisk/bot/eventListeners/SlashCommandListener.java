@@ -2,6 +2,7 @@ package me.williamfrisk.bot.eventListeners;
 
 import me.williamfrisk.bot.eventHandlers.slashCommandHandlers.CommandHandler;
 import me.williamfrisk.bot.eventHandlers.slashCommandHandlers.SlashLevelHandler;
+import me.williamfrisk.bot.eventHandlers.slashCommandHandlers.SlashRegisterHandler;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import net.dv8tion.jda.api.interactions.commands.build.CommandData;
@@ -13,7 +14,8 @@ import java.util.List;
 public class SlashCommandListener extends ListenerAdapter implements CommandListener {
 
     private static final List<CommandHandler> commandHandlers = List.of(
-            SlashLevelHandler.getInstance()
+            SlashLevelHandler.getInstance(),
+            SlashRegisterHandler.getInstance()
     );
 
     public static SlashCommandListener create() {

@@ -1,6 +1,6 @@
 package me.williamfrisk.model.riotApi;
 
 public class RiotApiConstants {
-    public static final String CURRENT_KEY =  "RGAPI-c054a1ce-0658-4f68-a5d9-994756cb42f8";
+    public static final String CURRENT_KEY =  "RGAPI-2ecd8cec-a62e-4f7d-8d90-f87581cba5b6";
     public static final String HOST = "https://euw1.api.riotgames.com";
 }
